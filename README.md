@@ -1,15 +1,23 @@
 thailand.json
 =============
-I am working on D3.js project with map. 
-I coudn't find GeoJson file for Thailand so I create one.
+I am working on my personaly project using D3.js and I want to display the map of Thailand.
+
+I coudn't find GeoJson file for Thailand so I created one.
 
 Using GDAL ogr2ogr convert shapefile(ESRI) to Geojson.
 
 /Library/Frameworks/GDAL.framework/Versions/1.9/Programs/ogr2ogr -f "GeoJSON" -lco COORDINATE_PRECISION=6 thailand.json input.shp
 
 
-*Select field
 
-/Library/Frameworks/GDAL.framework/Versions/1.9/Programs/ogr2ogr -select "CHA_NE" -f "GeoJSON" -lco COORDINATE_PRECISION=6 thailand.json gi_changwatv7308.shp 
+How to select only one field to your output.
+use -select "fieldname"
 
-Thailand GeoJson file.
+/Library/Frameworks/GDAL.framework/Versions/1.9/Programs/ogr2ogr -select "CHA_NE" -f "GeoJSON" -lco COORDINATE_PRECISION=6 thailand.json TH_shape/gi_changwatv7308.shp 
+
+
+I also included simplified version of Thailand's Shapefile.
+
+thailand.json is an output from shapefile. (301.394 kb)
+thailandWithName.json is the simplified vector version. (162 kb)
+
