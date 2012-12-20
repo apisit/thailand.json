@@ -1,6 +1,6 @@
 thailand.json
 =============
-I am working on my personaly project using D3.js and I want to display the map of Thailand.
+I am working on my personal project using D3.js and I want to display the map of Thailand.
 
 I coudn't find GeoJson file for Thailand so I created one.
 
